@@ -1,6 +1,5 @@
 <section class="content-header">
   <h1>
-    Restaurantes/{{restaurant?.name}}
   </h1>
 </section>
 
@@ -33,10 +32,10 @@
         </div>
 
         <div class="box-footer detail-footer">
-          <a class="pull-left detail-active" href="detail-restaurant.html">
+          <a class="pull-left" routerLinkActive="detail-active" [routerLink]="['menu']">
             Menu
           </a>
-          <a class="pull-right" href="detail-restaurant-reviews.html">
+          <a class="pull-right" routerLinkActive="detail-active" [routerLink]="['reviews']">
             Avaliações
           </a>
         </div>
@@ -47,7 +46,7 @@
 
 
   <div class="row">
-    <mt-menu></mt-menu>
+    <router-outlet></router-outlet>
   </div>
 
 </section>
